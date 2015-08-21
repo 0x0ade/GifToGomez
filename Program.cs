@@ -75,7 +75,7 @@ namespace GifToGomez {
                 xmlFrames.AppendChild(xmlFrame);
                 XmlElement xmlRectangle = xml.CreateElement("Rectangle");
                 xmlRectangle.SetAttribute("x", xo.ToString());
-                xmlRectangle.SetAttribute("y", xo.ToString());
+                xmlRectangle.SetAttribute("y", yo.ToString());
                 xmlRectangle.SetAttribute("w", gif.Width.ToString());
                 xmlRectangle.SetAttribute("h", gif.Height.ToString());
                 xmlFrame.AppendChild(xmlRectangle);
