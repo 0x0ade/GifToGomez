@@ -68,10 +68,10 @@ namespace GifToGomez {
                     }
                 }
 
-                PropertyItem frameDelay = gif.GetPropertyItem(0x5100);
+                byte[] frameDelays = gif.GetPropertyItem(0x5100).Value;
 
                 XmlElement xmlFrame = xml.CreateElement("FramePC");
-                xmlFrame.SetAttribute("duration", (TimeSpan.TicksPerSecond * (frameDelay.Value[0] + frameDelay.Value[1] * 256L) * 10L).ToString());
+                xmlFrame.SetAttribute("duration", (TimeSpan.TicksPerSecond * (BitConverter.ToInt32(frameDelays, 0) / 100D)).ToString());
                 xmlFrames.AppendChild(xmlFrame);
                 XmlElement xmlRectangle = xml.CreateElement("Rectangle");
                 xmlRectangle.SetAttribute("x", xo.ToString());
