@@ -7,10 +7,14 @@ Converts most GIFs into a FEZ character animation spritesheet to be used by FEZM
 3. 'cd' into the folder.
 4. Run the following command:
 
-    GifToGomez.exe gifhere.gif animname
+```
+GifToGomez.exe gifhere.gif animname
+```
 
 Example:
 
+```
     GifToGomez.exe sanic.gif run
+```
 
-5. Copy the resulting animation XML and PNG into FEZ/Resources/character animations/<character here>/ (requires FEZMod to be run with -da once)
+To "install" the skin, copy the resulting animation XML and PNG into FEZ/Resources/character animations/&lt;character here&gt;/ (requires FEZMod to be run with -da once)
