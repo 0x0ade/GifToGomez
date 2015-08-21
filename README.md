@@ -14,7 +14,7 @@ GifToGomez.exe gifhere.gif animname
 Example:
 
 ```
-    GifToGomez.exe sanic.gif run
+GifToGomez.exe sanic.gif run
 ```
 
 To "install" the skin, copy the resulting animation XML and PNG into FEZ/Resources/character animations/&lt;character here&gt;/ (requires FEZMod to be run with -da once)
